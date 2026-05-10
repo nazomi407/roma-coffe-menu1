@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Roma Coffee Menü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div id="giris-ekrani" onclick="menuyuAc()">
+        <img src="roma.png" alt="Roma Coffee Logo" class="giris-logo">
+        <h1>MENÜ</h1>
+        <p>Görmek için tıklayın</p>
+    </div>
+    <div class="menu-kapsayici">
+        <img src="roma.png" alt="Roma Coffee Logo" class="ana-logo">
+        <h1 class="ana-baslik">ROMA COFFEE & ART</h1>
+        <div class="arama-kutusu">
+    <i class="fas fa-search"></i>
+    <input type="text" id="menuSearch" placeholder="Ürün ara... (Örn: Latte)" onkeyup="aramaYap()">
+</div>
+        <p class="alt-baslik">MENÜ</p>
+        <details>
+            <summary>KAHVALTI</summary>
+            <div class="kategori-icerik">
+                
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Roma Kahvaltı" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ROMA KAHVALTI (2 Kişi)</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">800 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Gözleme, yumurta (sahanda, omlet veya menemen), yumurtalı ekmek, sucuk, domates, salatalık, peynir tabağı, sıcak sepeti, yeşil-siyah zeytin, ege zeytin salatası, bal-kaymak, çilek reçeli, tereyağı, çikolata, acılı ezme, kahvaltı süresince sınırsız çay.)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Kahvaltı Tabağı" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KAHVALTI TABAĞI (Tek Kişilik)</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">400 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Salatalık, domates, patates kızartması, omlet, reçel, sıcak sepeti, tereyağı, bal, çikolata, zeytin, peynir, 1 adet fincan çay.)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Menemen" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">MENEMEN</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">220 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sahanda Yumurta" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SAHANDA YUMURTA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">190 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sucuklu Yumurta" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SUCUKLU YUMURTA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">210 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Omlet" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">OMLET</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">190 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kaşarlı, sucuklu, karışık)</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-weight: bold; font-size: 0.9em; margin-top: 15px; color: #1A4D2E;">KAHVALTI SERVİSİMİZ SAAT 16:00'A KADARDIR.</p>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>TOSTLAR</summary>
+            <div class="kategori-icerik">
+                
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Bazlama Tost" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BAZLAMA TOST</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">240 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kaşarlı, sucuklu, karışık, domates peynirli)</p>
+                    </div> </div> <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Kare Tost" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KARE TOST</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">240 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kaşarlı, sucuklu, karışık, domates peynirli)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Roma Tost" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ROMA TOST</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kaşar, sucuk, cheddar, turşu, salam, sos)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Gözleme" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">GÖZLEME</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">240 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kaşarlı, patatesli, kıymalı, beyaz peynirli)</p>
+                    </div>
+                </div>
+
+            </div>
+        </details>
+        <details>
+            <summary>APERATİFLER</summary>
+            <div class="kategori-icerik">
+                
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sosis Sepeti" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SOSİS SEPETİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">230 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sigara Böreği" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SİGARA BÖREĞİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">230 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Çıtır Patates" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ÇITIR PATATES</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">210 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Çıtır Tavuk Sepeti" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ÇITIR TAVUK SEPETİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Soğan Halkası" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SOĞAN HALKASI</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">230 TL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Roma Sepeti" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ROMA SEPETİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Çıtır tavuk, sosis, sigara böreği, soğan halkası)</p>
+                    </div>
+                </div>
+
+            </div>
+        </details>
+        <details>
+            <summary>SALATALAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Peynirli Salata" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">PEYNİRLİ SALATA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sezar Salata" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SEZAR SALATA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>MAKARNALAR</summary>
+            <div class="kategori-icerik">
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Fettucini Alfredo" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">FETTUCİNİ ALFREDO</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Krema, tavuk, mantar)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Körili Fettucini" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KÖRİLİ FETTUCİNİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Körili krema, tavuk, mantar)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Fettucini Bolonez" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">FETTUCİNİ BOLONEZ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Domates sos, kıyma, biber)</p>
+                    </div>
+                </div>
+
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Brutus Special" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BRUTUS SPECİAL</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Pesto sos, krema, tavuk, mantar)</p>
+                    </div>
+                </div>
+
+            </div>
+        </details>
+        <details>
+            <summary>WRAPLAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Tavuk Wrap" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">TAVUK WRAP</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">310 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kremalı tavuk, mantar, biber)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Köfte Wrap" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KÖFTE WRAP</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Köfte, domates, biber, mozzarella)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Cheddar Tavuk Wrap" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">CHEDDAR TAVUK WRAP</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">310 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Kremalı tavuk, cheddar, mantar, biber)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Barbekülü Wrap" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BARBEKÜLÜ WRAP</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">310 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Barbekü sos, biber, mantar)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Körili Wrap" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KÖRİLİ WRAP</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">310 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Köri sos, biber, mantar)</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>SPECİAL</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Pesto Soslu Tavuk" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">PESTO SOSLU TAVUK</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Pesto sos, biber, mantar)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Q7" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">Q7</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">340 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Tavuk, beşamel sos, havuç, biber)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Neron'un Acılı Tavuğu" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">NERO'NUN ACILI TAVUĞU</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">300 TL</span>
+                        </div>
+                        <p class="urun-aciklama">Neron Roma'yı biz de sizi yakıyoruz. (Soya sosu, biber, mantar, baharat)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Barbekü Soslu Tavuk" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BARBEKÜ SOSLU TAVUK</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Barbekü sos, biber, mantar)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Soya Soslu Tavuk" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SOYA SOSLU TAVUK</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Soya sos, biber, mantar)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Köri Soslu Tavuk" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KÖRİ SOSLU TAVUK</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Köri sos, biber, mantar)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Ballı Limonlu Tavuk" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BALLI LİMONLU TAVUK</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(İsmi yeterince açıklayıcı)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Marcus Antonyus" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">MARCUS ANTONYUS</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">340 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Labne, dereotu, tereyağı)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Tavuk İle Peynir" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">TAVUK İLE PEYNİR</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Cheddar, krema, biber, mantar)</p>
+                    </div>
+                </div>
+                <p style="text-align: center; font-weight: bold; font-size: 0.9em; margin-top: 15px; color: #1A4D2E;">PATATES, PİLAV VE SALATA İLE SERVİS EDİLİR</p>
+            </div>
+        </details>
+        <details>
+            <summary>IZGARALAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Tavuk Izgara" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">TAVUK IZGARA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">330 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Patates, pilav, salata ile servis edilir.)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Köfte Izgara" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">KÖFTE IZGARA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">350 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Patates, pilav, salata ile servis edilir.)</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>TATLILAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Sufle" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SUFLE</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Belçika çikolatası ve dondurma ile servis edilir.)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Magnolia" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">MAGNOLIA</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">240 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Çilekli veya muzlu)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Browni" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BROWNİ</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Belçika çikolatası ve dondurma ile servis edilir.)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="San Sebastian" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">SAN SEBASTİAN</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">270 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Belçika sosu ile servis edilir.)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Browni Bowl" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BROWNİ BOWL</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">290 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Çilek, muz, krep kırığı, belçika çikolatası ve dondurma)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Dev Cookie" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">DEV COOKIE</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">250 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Belçika çikolatası ve dondurma ile servis edilir.)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Roma Rüyası" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">ROMA RÜYASI</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">280 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Çilek, muz, krep kırığı, belçika çikolatası, pastacı kreması)</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>ESPRESSO BAZLI KAHVELER</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Espresso" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ESPRESSO</span><span class="noktalar"></span><span class="urun-fiyat">120 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Double Espresso" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DOUBLE ESPRESSO</span><span class="noktalar"></span><span class="urun-fiyat">130 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Americano" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">AMRICANO</span><span class="noktalar"></span><span class="urun-fiyat">150 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">LATTE</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Flat White" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">FLAT WHITE</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Cappuccino" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">CAPPUCCINO</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Mocha" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">MOCHA</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="White Mocha" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">WHITE MOCHA</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Caramel Macchiato" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">CARAMEL MACCHIATO</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Pumpkin Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">PUMKIN LATTE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Coco Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">COCO LATTE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Salted Caramel Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SALTED CARAMEL LATTE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="White Raspberry Mocha" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">WHITE RASBERRY MOCHA</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Taffee Nut" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">TAFFEE NUT</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ballı Tarçınlı Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">BALLI TARÇINLI LATTE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Roma Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ROMA LATTE</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Lotus" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">LOTUS</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Red Eye" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">RED EYE</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Cortado" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">CORTADO</span><span class="noktalar"></span><span class="urun-fiyat">150 TL</span></div></div></div>
+            </div>
+        </details>
+        <details>
+            <summary>SOĞUK KAHVELER</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Cold Brew" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">COLD BREW</span><span class="noktalar"></span><span class="urun-fiyat">180 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ice Americano" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ICE AMERICANO</span><span class="noktalar"></span><span class="urun-fiyat">150 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ice Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ICE LATTE</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ice Mocha" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ICE MOCHA</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ice White Mocha" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ICE WHITE MOCHA</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Coffee Toffee" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">COFFEE TOFFEE</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Spankling Ice Americano" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SPANKLING ICE AMERICANO</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ice Filtre Kahve" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ICE FILTRE KAHVE</span><span class="noktalar"></span><span class="urun-fiyat">140 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Affogato" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">AFFOGATO</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+            </div>
+        </details>
+        <details>
+            <summary>KAHVELER</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Filtre Kahve" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">FİLTRE KAHVE</span><span class="noktalar"></span><span class="urun-fiyat">140 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Türk Kahvesi" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">TÜRK KAHVESİ</span><span class="noktalar"></span><span class="urun-fiyat">120 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Dağ Çilekli" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DAĞ ÇİLEKLİ</span><span class="noktalar"></span><span class="urun-fiyat">120 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Damla Sakızlı" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DAMLA SAKIZLI</span><span class="noktalar"></span><span class="urun-fiyat">120 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Double Türk Kahvesi" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DOUBLE TÜRK KAHVESİ</span><span class="noktalar"></span><span class="urun-fiyat">180 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Menengiç Kahvesi" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">MENENGİÇ KAHVESİ</span><span class="noktalar"></span><span class="urun-fiyat">130 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Dibek Kahvesi" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DİBEK KAHVESİ</span><span class="noktalar"></span><span class="urun-fiyat">130 TL</span></div></div></div>
+            </div>
+        </details>
+        <details>
+            <summary>ÇAYLAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Çay" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ÇAY</span><span class="noktalar"></span><span class="urun-fiyat">50 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Fincan Çay" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">FİNCAN ÇAY</span><span class="noktalar"></span><span class="urun-fiyat">80 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sütlü Çay" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SÜTLÜ ÇAY</span><span class="noktalar"></span><span class="urun-fiyat">120 TL</span></div></div></div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Bitki Çayı" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir">
+                            <span class="urun-adi">BİTKİ ÇAYI</span>
+                            <span class="noktalar"></span>
+                            <span class="urun-fiyat">140 TL</span>
+                        </div>
+                        <p class="urun-aciklama">(Nane Limon, Ihlamur, Ada çayı, Hibiscus, Yeşil Çay, Papatya çayı, Kış çayı, Melisa çayı)</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>SICAK İÇECEKLER</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Salep" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SALEP</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Damla Sakızlı Salep" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">DAMLA SAKIZLI SALEP</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sıcak Çikolata" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SICAK ÇİKOLATA</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sıcak Beyaz Çikolata" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SICAK BEYAZ ÇİKOLATA</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sıcak Süt" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SICAK SÜT</span><span class="noktalar"></span><span class="urun-fiyat">100 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ballı Sıcak Süt" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">BALLI SICAK SÜT</span><span class="noktalar"></span><span class="urun-fiyat">130 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Chai Tea Latte" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">CHAI TEA LATTE</span><span class="noktalar"></span><span class="urun-fiyat">160 TL</span></div></div></div>
+            </div>
+        </details>
+        <details>
+            <summary>SOĞUK İÇECEKLER</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Limonata" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">LİMONATA</span><span class="noktalar"></span><span class="urun-fiyat">180 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Portakal Suyu" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">PORTAKAL SUYU</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div></div></div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Frappe" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">FRAPPE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div>
+                        <p class="urun-aciklama">(Çikolata, Oreo, Karamel, Vanilya)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Frozen" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">FROZEN</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div>
+                        <p class="urun-aciklama">(Yeşil elma, Çilek, Şeftali, Böğürtlen, Kavun, Karpuz, Kardaut, Mango, Ananas, Limon, Hangover)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Milkshake" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">MİLKSHAKE</span><span class="noktalar"></span><span class="urun-fiyat">200 TL</span></div>
+                        <p class="urun-aciklama">(Çikolata, Vanilya, Karamel, Çilek, Böğürtlen, Muz)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Smoothie" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">SMOOTHIE</span><span class="noktalar"></span><span class="urun-fiyat">190 TL</span></div>
+                        <p class="urun-aciklama">(Çilek, Böğürtlen, Karpuz, Mango, Ananas, Vanilya)</p>
+                    </div>
+                </div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Churchill" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">CHURCHILL</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+            </div>
+        </details>
+        <details>
+            <summary>KOKTEYLLER</summary>
+            <div class="kategori-icerik">
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Koç" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">KOÇ</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Nar, Frambuaz, Elmalı Soda, Limon)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Boğa" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">BOĞA</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Elma, Bahçe Nanesi, Limon, Karpuz-Çilek Soda)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="İkizler" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">İKİZLER</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Limon, Mango, Kivi, Nane, Sprite)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Yengeç" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">YENGEÇ</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Muz, Mango, Nane, Limonata)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Aslan" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">ASLAN</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Şeftali, Ananas, Limonata, Enerji İçeceği)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Başak" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">BAŞAK</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Yaban Mersini, Portakal, Limon, Bahçe Nanesi, Sprite)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Terazi" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">TERAZİ</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Kivi, Ananas, Elma suyu, Sprite)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Akrep" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">AKREP</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Çilek, Pudra Şekeri, Limon, Sade Soda)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Yay" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">YAY</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Hibiscus, Limon, Karadut, Böğürtlen)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Oğlak" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">OĞLAK</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Tuzlu Karamel, Fındık, Vabilya, Süt, Espresso)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Kova" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">KOVA</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Lime, Ananas, Şeftali, Bahçe Nanesi, Sprite)</p>
+                    </div>
+                </div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Balık" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">BALIK</span><span class="noktalar"></span><span class="urun-fiyat">210 TL</span></div>
+                        <p class="urun-aciklama">(Turunç, Böğürtlen, Portakal Suyu, Enerji İçeceği)</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>MEŞRUBATLAR</summary>
+            <div class="kategori-icerik">
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Kola" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">KOLA</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Şekersiz Kola" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">ŞEKERSİZ KOLA</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Fanta" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">FANTA</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sprite" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SPRİTE</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Meyve Suyu" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">MEYVE SUYU</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Soğuk Çay" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SOĞUK ÇAY</span><span class="noktalar"></span><span class="urun-fiyat">90 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Ayran" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">AYRAN</span><span class="noktalar"></span><span class="urun-fiyat">60 TL</span></div></div></div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Sade Maden Suyu" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SADE MADEN SUYU</span><span class="noktalar"></span><span class="urun-fiyat">60 TL</span></div></div></div>
+                <div class="urun">
+                    <img src="https://via.placeholder.com/80" alt="Meyveli Soda" class="urun-fotograf">
+                    <div class="urun-detay">
+                        <div class="urun-ust-satir"><span class="urun-adi">MEYVELİ SODA</span><span class="noktalar"></span><span class="urun-fiyat">60 TL</span></div>
+                        <p class="urun-aciklama">(Limon, Elma, Karpuz-Çilek)</p>
+                    </div>
+                </div>
+                <div class="urun"><img src="https://via.placeholder.com/80" alt="Su" class="urun-fotograf"><div class="urun-detay"><div class="urun-ust-satir"><span class="urun-adi">SU</span><span class="noktalar"></span><span class="urun-fiyat">30 TL</span></div></div></div>
+            </div>
+        </details>
+<button id="ortak-geri-butonu" class="geri-butonu" onclick="kategorilereDon()">⬅ Kategorilere Dön</button>
+<footer class="site-footer">
+    <div class="footer-divider"></div>
+    <p><i class="fab fa-instagram"></i> @romacoffeeart</p>
+    <p><i class="fas fa-wifi"></i> Wi-Fi: RomaCoffee2024</p>
+    <p><i class="fas fa-clock"></i> 09:00 - 23:00</p>
+</footer>
+    <script>
+        // 1. Giriş Ekranını Kapatıp 17'li Menüyü Gösterir
+        function menuyuAc() {
+            document.getElementById('giris-ekrani').style.display = 'none';
+        }
+
+        // 2. Details'e Tıklandığında Sayfa Gibi Davranmasını Sağlar
+        const tumMenuler = document.querySelectorAll("details");
+        tumMenuler.forEach((menu) => {
+            menu.addEventListener("toggle", (e) => {
+                if (menu.open) {
+                    // Body'e class ekle (CSS bu class'ı görünce diğerlerini gizleyecek)
+                    document.body.classList.add('kategori-acik');
+                    window.scrollTo(0, 0); // Sayfanın en üstüne at
+                }
+            });
+        });
+
+        // 3. Geri Dön Butonuna Basıldığında Menüye Atar
+        function kategorilereDon() {
+            document.body.classList.remove('kategori-acik');
+            tumMenuler.forEach(menu => {
+                menu.open = false; // Tüm açık sekmeleri kapat
+            });
+            window.scrollTo(0, 0);
+        }// 1. Geliştirilmiş Arama Fonksiyonu
+function aramaYap() {
+    let input = document.getElementById('menuSearch').value.toLowerCase();
+    let kategoriler = document.querySelectorAll('details'); // Tüm kategorileri bul
+
+    kategoriler.forEach(kategori => {
+        let urunler = kategori.querySelectorAll('.urun');
+        let eslesenVarMi = false; // Bu kategoride aranan ürün var mı?
+
+        urunler.forEach(urun => {
+            let urunAdi = urun.querySelector('.urun-adi').innerText.toLowerCase();
+            if (urunAdi.includes(input)) {
+                urun.style.display = "flex"; // Ürünü göster
+                eslesenVarMi = true;
+            } else {
+                urun.style.display = "none"; // Ürünü gizle
+            }
+        });
+
+        // Eğer arama kutusuna bir şey yazıldıysa:
+        if (input !== "") {
+            if (eslesenVarMi) {
+                kategori.style.display = "block"; // Kategoriyi göster
+                kategori.open = true; // İçinde ürün bulduğu için kategoriyi OTOMATİK AÇ
+            } else {
+                kategori.style.display = "none"; // İçinde ürün yoksa o kategoriyi gizle
+            }
+        } else {
+            // Arama kutusu tamamen silinip boşaldığında her şeyi eski haline getir:
+            kategori.style.display = "block";
+            kategori.open = false; 
+        }
+    });
+}
+// 2. Gece Modu Fonksiyonu
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const icon = document.querySelector('#dark-mode-toggle i');
+    if(document.body.classList.contains('dark-mode')){
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+}
+
+// 3. Yukarı Çık Fonksiyonu
+let mybutton = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+    </script>
+<button id="dark-mode-toggle" onclick="toggleDarkMode()">
+    <i class="fas fa-moon"></i>
+</button>
+
+<button id="scrollTopBtn" onclick="topFunction()">
+    <i class="fas fa-arrow-up"></i>
+</button>
+</body>
+</html>

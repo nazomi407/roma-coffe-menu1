@@ -1,0 +1,363 @@
+/* Genel Sayfa Ayarları ve Krem Arka Plan */
+body {
+    background-color: #f6e3ba; /* Tüm sayfa için yumuşak ve şık bir krem rengi */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Menünün Ortalanması ve Genişliği */
+.menu-kapsayici {
+    width: 100%;
+    max-width: 700px;
+    background-color: #FFFFFF; /* İçeriğin daha iyi okunması için menü arka planı beyaz */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Menüye derinlik katan hafif gölge */
+}
+
+/* Başlıklar (İlk Başta Çıkmasını İstediğin Kısım) */
+.ana-baslik {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #1A4D2E; /* Koyu yeşil */
+    font-size: 2em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.alt-baslik {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+/* 17 Adet Başlık Butonları (Kategoriler) */
+details {
+    margin-bottom: 12px;
+}
+
+summary {
+    background-color: #1A4D2E; /* Koyu yeşil butonlar */
+    color: #FDF9F1; /* Yazılar krem */
+    padding: 15px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style: none; /* Yanındaki varsayılan oku kaldırır */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+summary::details-marker {
+    display: none; /* Safari vb. tarayıcılarda oku gizlemek için ekstra kod */
+}
+
+summary:hover {
+    background-color: #113620; /* Üzerine gelince koyulaşır */
+}
+
+/* Butona Basınca Açılan Yemekler Kısmı */
+.kategori-icerik {
+    padding: 20px 15px;
+    border-left: 2px solid #1A4D2E;
+    border-right: 2px solid #1A4D2E;
+    border-bottom: 2px solid #1A4D2E;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #FAFAFA; /* Açılan kısmın hafif gri/krem olması */
+    margin-top: -5px; /* Butonla birleşik durması için */
+}
+
+.urun {
+    margin-bottom: 20px;
+}
+
+.urun:last-child {
+    margin-bottom: 0;
+}
+
+/* Senin Koyduğun Noktalar ve Fiyat Hizalaması (Flexbox) */
+.urun-ust-satir {
+    display: flex;
+    align-items: flex-end; /* Yazıların alt kısımlarını hizalar */
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.urun-adi {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.05em;
+    white-space: nowrap; /* İsmin bölünmesini engeller */
+}
+
+/* İsimle fiyat arasındaki nokta nokta uzayan çizgi */
+.noktalar {
+    flex-grow: 1;
+    border-bottom: 2px dotted #ccc;
+    margin: 0 10px;
+    position: relative;
+    top: -6px; /* Noktaları metin hizasına getirir */
+}
+
+.urun-fiyat {
+    font-weight: bold;
+    color: #1A4D2E;
+    font-size: 1.1em;
+    white-space: nowrap;
+}
+
+.urun-aciklama {
+    margin: 0;
+    font-size: 0.85em;
+    color: #7f8c8d;
+    font-style: italic;
+    line-height: 1.4;
+}/* --- YENİ EKLENEN FOTOĞRAF VE DÜZELTİLMİŞ HİZALAMA KODLARI --- */
+
+.urun {
+    display: flex;
+    align-items: flex-start; 
+    gap: 15px; 
+    margin-bottom: 25px;
+}
+
+.urun-gorsel-alani {
+    flex-shrink: 0; 
+}
+
+.urun-fotograf {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    border: 1px solid #ddd;
+    background-color: #eee; 
+}
+
+.urun-detay {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Üst satır hizalamasını eziyoruz */
+.urun-ust-satir {
+    display: flex;
+    align-items: flex-end; 
+    width: 100%;
+    margin-bottom: 5px;
+}
+/* --- YENİ SAYFA GEÇİŞİ VE BUTON TASARIMLARI --- */
+
+/* Ana Menüdeki Kategori Butonları */
+.kategori-butonu {
+    background-color: #1A4D2E;
+    color: #FDF9F1;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.kategori-butonu:hover {
+    background-color: #113620;
+}
+
+/* Alt Sayfa Başlığı (Girdiğin Menünün Adı) */
+.alt-sayfa-baslik {
+    text-align: center;
+    color: #1A4D2E;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #1A4D2E;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Menüye Dön Butonu */
+.geri-butonu {
+    background-color: #F2E5D5; /* Krem tonu */
+    color: #1A4D2E; /* Yeşil yazı */
+    border: 2px solid #1A4D2E;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.geri-butonu:hover {
+    background-color: #1A4D2E;
+    color: #FDF9F1;
+}
+
+/* Sayfa Geçişlerini Sağlayacak Sınıf */
+.alt-sayfa {
+    display: none; /* Başlangıçta tüm alt menüler gizli! */
+}/* --- SİHİRLİ SAYFA GEÇİŞİ CSS KODLARI --- */
+
+/* 1. Giriş Ekranı (İlk Açılış) */
+#giris-ekrani {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #FDF9F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+#giris-ekrani h1 {
+    font-size: 5em;
+    color: #1A4D2E;
+    letter-spacing: 10px;
+    margin: 0;
+    transition: transform 0.3s;
+}
+#giris-ekrani h1:hover { transform: scale(1.1); }
+#giris-ekrani p { color: #7f8c8d; font-style: italic; }
+
+/* 2. Kategori Tıklandığında Devreye Giren Kurallar */
+body.kategori-acik .ana-baslik,
+body.kategori-acik .alt-baslik {
+    display: none; /* Ana başlıkları gizle */
+}
+
+body.kategori-acik details:not([open]) {
+    display: none; /* Tıklanmayan diğer kategorileri gizle */
+}
+
+/* 3. Tıklanan details'in Butonunu Sayfa Başlığına Dönüştür */
+body.kategori-acik details[open] summary {
+    background-color: transparent;
+    color: #1A4D2E;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: none;
+    border-bottom: 2px solid #1A4D2E;
+    border-radius: 0;
+    pointer-events: none; /* Tekrar tıklayıp kapatmayı engelle */
+    margin-bottom: 20px;
+}
+
+/* 4. Geri Dön Butonu */
+#ortak-geri-butonu {
+    display: none;
+}
+body.kategori-acik #ortak-geri-butonu {
+    display: flex;
+}/* --- LOGO TASARIM AYARLARI --- */
+
+/* 1. Giriş ekranındaki büyük logo */
+.giris-logo {
+    width: 220px; /* Logonun büyüklüğünü buradan ayarlayabilirsiniz */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Logoyu yuvarlak yapar */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Hafif şık bir gölge */
+    transition: transform 0.3s;
+}
+
+/* 2. Menü içindeki (başlığın üstündeki) küçük logo */
+.ana-logo {
+    width: 120px; /* Menüdeki logo boyutu */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto; /* Logoyu tam ortaya hizalar */
+    border-radius: 50%;
+}
+
+/* 3. Kategoriye (örneğin Kahvaltı'ya) tıklandığında logoyu gizle */
+body.kategori-acik .ana-logo {
+    display: none;
+}/* --- YENİ EKLENTİLERİN TASARIMLARI --- */
+/* --- GECE MODU RENKLERİ (Tüm Site İçin) --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Ana menü kutusu ve giriş ekranını koyulaştır */
+body.dark-mode .menu-kapsayici, 
+body.dark-mode #giris-ekrani {
+    background-color: #1e1e1e;
+}
+
+/* Başlıkların ve yazıların rengini aç */
+body.dark-mode .ana-baslik, 
+body.dark-mode .alt-baslik, 
+body.dark-mode .urun-adi, 
+body.dark-mode .urun-fiyat,
+body.dark-mode #giris-ekrani h1 {
+    color: #f5f5f5;
+}
+
+/* Kategori butonları ve açılan içeriklerin renkleri */
+body.dark-mode details { background: #2d2d2d; color: #f5f5f5;}
+body.dark-mode summary { background: #2a3b2c; color: #f5f5f5;}
+body.dark-mode .kategori-icerik { background-color: #252525; border-color: #2a3b2c; }
+
+/* Arama kutusu içi */
+body.dark-mode .arama-kutusu input { background: #2d2d2d; color: #f5f5f5; border: 1px solid #444; }
+
+/* Footer (Alt kısım) yazıları */
+body.dark-mode .site-footer p { color: #aaa; }
+/* Arama Kutusu */
+.arama-kutusu {
+    position: relative;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 400px;
+}
+.arama-kutusu input {
+    width: 100%; padding: 12px 12px 12px 40px; box-sizing: border-box;
+    border-radius: 25px; border: 1px solid #ccc; outline: none; font-size: 15px;
+}
+.arama-kutusu i {
+    position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #888;
+}
+
+/* Yukarı Çık Butonu */
+#scrollTopBtn {
+    display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99;
+    background-color: #1A4D2E; color: white; border: none; cursor: pointer;
+    padding: 15px; border-radius: 50%; font-size: 18px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Gece Modu Butonu */
+#dark-mode-toggle {
+    position: fixed; top: 20px; right: 20px; z-index: 10001;
+    background: white; border: 1px solid #ccc; padding: 12px;
+    border-radius: 50%; cursor: pointer; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* İletişim (Footer) */
+.site-footer {
+    text-align: center; margin-top: 40px; padding-bottom: 30px; font-size: 14px; color: #555;
+}
+body.dark-mode .site-footer { color: #aaa; }
+.footer-divider { height: 1px; background: #ccc; width: 50%; margin: 20px auto; }
