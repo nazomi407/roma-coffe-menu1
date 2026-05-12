@@ -361,3 +361,22 @@ body.dark-mode .site-footer p { color: #aaa; }
 }
 body.dark-mode .site-footer { color: #aaa; }
 .footer-divider { height: 1px; background: #ccc; width: 50%; margin: 20px auto; }
+/* Gece Modu Butonu - Genel Büyütme */
+#dark-mode-toggle {
+    font-size: 24px !important; /* İkonun boyutunu büyütür */
+    width: 50px !important;     /* Butonun genişliği */
+    height: 50px !important;    /* Butonun yüksekliği */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;         /* Tam yuvarlak görünüm için */
+}
+
+/* Telefonlar İçin Özel Büyütme (Ekran genişliği 600px ve altı) */
+@media (max-width: 600px) {
+    #dark-mode-toggle {
+        font-size: 28px !important; /* Mobilde parmakla basmayı kolaylaştırır */
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
