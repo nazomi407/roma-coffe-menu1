@@ -73,7 +73,7 @@ summary:hover {
     border-bottom: 2px solid #1A4D2E;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: #FAFAFA; /* Açılan kısmın hafif gri/krem olması */
+    background-color: #fafafa62; /* Açılan kısmın hafif gri/krem olması */
     margin-top: -5px; /* Butonla birleşik durması için */
 }
 
@@ -284,7 +284,7 @@ body.kategori-acik #ortak-geri-butonu {
 
 /* 2. Menü içindeki (başlığın üstündeki) küçük logo */
 .ana-logo {
-    width: 100px; /* Menüdeki logo boyutu */
+    width: 120px; /* Menüdeki logo boyutu */
     height: auto;
     display: block;
     margin: 0 auto 15px auto; /* Logoyu tam ortaya hizalar */
@@ -361,6 +361,8 @@ body.dark-mode .site-footer p { color: #aaa; }
 }
 body.dark-mode .site-footer { color: #aaa; }
 .footer-divider { height: 1px; background: #ccc; width: 50%; margin: 20px auto; }
+
+
 /* Gece Modu Butonu - Genel Büyütme */
 #dark-mode-toggle {
     font-size: 24px !important; /* İkonun boyutunu büyütür */
@@ -379,4 +381,20 @@ body.dark-mode .site-footer { color: #aaa; }
         width: 60px !important;
         height: 60px !important;
     }
+}
+
+/* Menünün Ortalanması ve Genişliği */
+.menu-kapsayici {
+    width: 100%;
+    max-width: 700px;
+    
+    /* YENİ EKLENEN KISIM: Arka plan resmi ve okunabilirlik için %85 saydam beyaz filtre */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('Kolezyumun-Insasi-ve-Tarihi.jpg');
+    background-size: cover;       /* Resmi kutuya tam sığdırır */
+    background-position: center;  /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin yan yana tekrar etmesini önler */
+    
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Menüye derinlik katan hafif gölge */
 }
